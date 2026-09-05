@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notenrechner Schweiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <div class="logo">
+            NOTE<span>CALC</span>
+        </div>
+
+        <div class="country">
+            🇨🇭 Schweiz
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <p class="eyebrow">SCHWEIZER NOTENSYSTEM</p>
+
+            <h1>
+                Punkte in<br>
+                <span>Noten.</span>
+            </h1>
+
+            <p>
+                Gib deine erreichten Punkte und die maximale
+                Punktzahl ein und berechne deine Schweizer Note.
+            </p>
+
+        </section>
+
+
+        <section class="calculator">
+
+            <div class="input-section">
+
+                <div class="input-group">
+
+                    <label for="points">
+                        Erreichte Punkte
+                    </label>
+
+                    <input
+                        type="number"
+                        id="points"
+                        placeholder="z. B. 42"
+                        min="0"
+                        step="0.01"
+                    >
+
+                </div>
+
+
+                <div class="divider">/</div>
+
+
+                <div class="input-group">
+
+                    <label for="maxPoints">
+                        Maximale Punkte
+                    </label>
+
+                    <input
+                        type="number"
+                        id="maxPoints"
+                        placeholder="z. B. 60"
+                        min="1"
+                        step="0.01"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <button id="calculate">
+                Note berechnen
+                <span>→</span>
+            </button>
+
+
+            <div id="error" class="error"></div>
+
+
+            <div id="result" class="result">
+
+                <div class="result-label">
+                    DEINE NOTE
+                </div>
+
+                <div id="grade" class="grade">
+                    —
+                </div>
+
+                <div id="percentage" class="percentage">
+                    —
+                </div>
+
+                <div id="status" class="status">
+                    Punkte eingeben
+                </div>
+
+            </div>
+
+
+            <button id="reset" class="reset">
+                Zurücksetzen
+            </button>
+
+        </section>
+
+
+        <section class="info">
+
+            <div class="info-card">
+
+                <span>6.0</span>
+
+                <h3>Sehr gut</h3>
+
+                <p>
+                    Höchste Schweizer Note
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>4.0</span>
+
+                <h3>Genügend</h3>
+
+                <p>
+                    Bestehensgrenze
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>1.0</span>
+
+                <h3>Ungenügend</h3>
+
+                <p>
+                    Tiefste Note
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="formula">
+
+            <p class="eyebrow">BERECHNUNG</p>
+
+            <h2>Wie wird gerechnet?</h2>
+
+            <div class="formula-box">
+                Note = 1 + 5 × (Punkte ÷ Maximalpunkte)
+            </div>
+
+            <p>
+                Beispiel: Bei 42 von 60 Punkten ergibt sich
+                eine Note von 4.5.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            NOTE<span>CALC</span>
+        </div>
+
+        <p>
+            Schweizer Notenrechner · 1.0 – 6.0
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
